@@ -38,7 +38,7 @@ export class AuthenticatorComponent implements OnInit {
   ){
     let email = loginEmail.value;
     let password = loginPassword.value;
-
+    console.log(password);
     if(this.isNotEmpty(email) && this.isNotEmpty(password)) {
       this.firebasetsAuth.signInWith(
         {

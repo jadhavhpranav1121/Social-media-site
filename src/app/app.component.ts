@@ -59,7 +59,7 @@ export class AppComponent {
       (resolved, rejected) => {
         this.firestore.listenToDocument(
           {
-            name: "Getting Document",
+            name: "Getting Documents",
             path: ["Users", this.auth.getAuth().currentUser.uid],
             onUpdate: (result) => {
               AppComponent.userDocument = <UserDocument>result.data();
