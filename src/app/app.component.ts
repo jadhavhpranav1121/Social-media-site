@@ -49,9 +49,10 @@ export class AppComponent {
   }
   getUsername(){
     try {
+      console.log(AppComponent.userDocument);
       return AppComponent.userDocument.publicName;
     } catch (err) {
-      
+      console.log(err);
     }
   }
   getUserProfile(){

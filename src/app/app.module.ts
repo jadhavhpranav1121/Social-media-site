@@ -18,6 +18,10 @@ import { PostFeedComponent } from './pages/post-feed/post-feed.component';
 import { CreatePostComponent } from './tools/create-post/create-post.component';
 import { PostComponent } from './tools/post/post.component';
 import { ReplyComponent } from './tools/reply/reply.component';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { LoaderComponent } from './core/loader/loader.component';
+import { LoaderService } from './core/services/loader.service';
 
 
 @NgModule({
@@ -30,7 +34,10 @@ import { ReplyComponent } from './tools/reply/reply.component';
     PostFeedComponent,
     CreatePostComponent,
     PostComponent,
-    ReplyComponent
+    ReplyComponent,
+    HeaderComponent,
+    FooterComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,7 @@ import { ReplyComponent } from './tools/reply/reply.component';
     MatDialogModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [LoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/AS_sample_logo.png" alt="LOGO"></div>
+    <div class="push-left">
+      <button [hidden]="hamburgerhidden" id="menu-toggler" data-class="menu-active" class="hamburger">
+        <span class="hamburger-line hamburger-line-top"></span>
+        <span class="hamburger-line hamburger-line-middle"></span>
+        <span class="hamburger-line hamburger-line-bottom"></span>
+      </button>
+  
+      <!--  Menu compatible with wp_nav_menu  -->
+      <ul id="primary-menu" class="menu nav-menu">
+        <li *ngIf="!loggedIn()" (click)="onLoginClick()" class="menu-item">Login / Signup</li>
+            <div *ngIf="loggedIn() && userHasProfile" class="menu-item username-design" >
+                Hello, <b>{{getUsername()?getUsername():"Demo"}}</b>
+            </div>
+            <div *ngIf="loggedIn()" (click)="onLogoutClick()" class="menu-item" >Logout</div>
+      </ul>
+  
+  
+    </div>
+  </nav>
+  <app-profile [show]="loggedIn() && !userHasProfile"></app-profile>
