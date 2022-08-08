@@ -47,7 +47,8 @@ export class CreatePostComponent implements OnInit {
                 comment: comment,
                 creatorId: this.auth.getAuth().currentUser.uid,
                 imageUrl: downloadUrl,
-                timestamp: FirebaseTSApp.getFirestoreTimestamp()
+                timestamp: FirebaseTSApp.getFirestoreTimestamp(),
+                like:false
               },
               onComplete: (docId) => {
                 this.dialog.close();

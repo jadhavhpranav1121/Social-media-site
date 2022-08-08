@@ -2,11 +2,12 @@
     position: fixed;
     bottom: 2em;
     right: 2em;
+    
 }
 
 #post-feed {
     max-width: 500px;
-    margin-top: 5em;
+    margin-top: 9em;
     margin-left: auto;
     margin-right: auto;
 }

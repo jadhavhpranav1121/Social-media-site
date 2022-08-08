@@ -10,7 +10,7 @@ import { FirebaseTSFirestore } from 'firebasets/firebasetsFirestore/firebaseTSFi
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CodeibleSocialMediaProject';
+  title = 'SocialMediaSite';
   auth = new FirebaseTSAuth();
   firestore = new FirebaseTSFirestore();
   userHasProfile = true;

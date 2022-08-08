@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/CodeibleSocialMediaProject'),
+      dir: require('path').join(__dirname, './coverage/SocialMediaSite'),
       subdir: '.',
       reporters: [
         { type: 'html' },

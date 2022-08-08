@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CodeibleSocialMediaProject": {
+    "SocialMediaSite": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CodeibleSocialMediaProject",
+            "outputPath": "dist/SocialMediaSite",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CodeibleSocialMediaProject:build"
+            "browserTarget": "SocialMediaSite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CodeibleSocialMediaProject:build:production"
+              "browserTarget": "SocialMediaSite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CodeibleSocialMediaProject:build"
+            "browserTarget": "SocialMediaSite:build"
           }
         },
         "test": {
@@ -112,18 +112,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CodeibleSocialMediaProject:serve"
+            "devServerTarget": "SocialMediaSite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CodeibleSocialMediaProject:serve:production"
+              "devServerTarget": "SocialMediaSite:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "CodeibleSocialMediaProject",
+  "defaultProject": "SocialMediaSite",
   "cli": {
     "analytics": "7de49a6f-823e-4f7a-a145-3351fe0e9b0b"
   }

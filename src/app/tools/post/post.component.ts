@@ -3,6 +3,7 @@ import { PostData } from 'src/app/pages/post-feed/post-feed.component';
 import { FirebaseTSFirestore} from 'firebasets/firebasetsFirestore/firebaseTSFirestore';
 import { MatDialog } from '@angular/material/dialog';
 import { ReplyComponent } from '../reply/reply.component';
+import { ListKeyManager } from '@angular/cdk/a11y';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
@@ -35,5 +36,17 @@ export class PostComponent implements OnInit {
       }
     );
   }
-
+  onLikeClick(){
+    this.firestore.update(
+      {
+        path: ["Posts", this.postData.postId],
+        data: {
+          like:!this.postData.like
+        },
+        onComplete: (docId) => {
+          
+        }
+      }
+    );
+  }
 }

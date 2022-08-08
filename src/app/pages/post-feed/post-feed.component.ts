@@ -38,7 +38,7 @@ export class PostFeedComponent implements OnInit {
           );
         },
         onFail: err => {
-
+          alert("failed to provide posts");
         }
       }
     );
@@ -47,6 +47,7 @@ export class PostFeedComponent implements OnInit {
 }
 
 export interface PostData {
+  like: any;
   comment: string;
   creatorId: string;
   imageUrl?: string;

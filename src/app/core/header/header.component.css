@@ -5,6 +5,8 @@
 	 max-width: 200px;
 }
  .navbar {
+	top: 0;
+    z-index: 10000000;
 	 align-items: center;
 	 background: #fff;
 	 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -12,9 +14,23 @@
 	 flex-direction: row;
 	 font-family: sans-serif;
 	 padding: 10px 50px;
+	 background-color: rgba(255, 255, 255, 0.2);
+	 backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+	 -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+	 position:fixed;
+	 width: 100%;
 }
  .push-left {
 	 margin-left: auto;
+}
+.logo {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.2em;
+}
+.logo span{
+	color: #0071F3;
 }
 /* Menu */
  .hamburger {

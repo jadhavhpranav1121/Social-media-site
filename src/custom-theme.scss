@@ -12,24 +12,24 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$CodeibleSocialMediaProject-primary: mat-palette($mat-indigo);
-$CodeibleSocialMediaProject-accent: mat-palette($mat-pink, A200, A100, A400);
+$SocialMediaSite-primary: mat-palette($mat-indigo);
+$SocialMediaSite-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$CodeibleSocialMediaProject-warn: mat-palette($mat-red);
+$SocialMediaSite-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$CodeibleSocialMediaProject-theme: mat-light-theme((
+$SocialMediaSite-theme: mat-light-theme((
   color: (
-    primary: $CodeibleSocialMediaProject-primary,
-    accent: $CodeibleSocialMediaProject-accent,
-    warn: $CodeibleSocialMediaProject-warn,
+    primary: $SocialMediaSite-primary,
+    accent: $SocialMediaSite-accent,
+    warn: $SocialMediaSite-warn,
   )
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($CodeibleSocialMediaProject-theme);
+@include angular-material-theme($SocialMediaSite-theme);
 
